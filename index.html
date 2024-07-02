@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./src/javascript/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <title>Hasher</title>
+  </head>
+  <body>
+    <header>
+      <section class="slogan">Tooling <img class="toggle-theme-logo" src="./assets/toggle-off-solid.svg" /></section>
+      <section class="algo-header">
+        <select
+          class="form-select algo-choice"
+          aria-label="Default select example"
+        >
+          <option selected value="MD5">MD5</option>
+          <option value="SHA1">SHA1</option>
+          <option value="SHA256">SHA256</option>
+          <option value="SHA384">SHA384</option>
+          <option value="SHA512">SHA512</option>
+        </select>
+        <select
+          class="form-select comparison-choice"
+          aria-label="Default select example"
+        >
+          <option selected value="false">No Comparison</option>
+          <option value="true">Compare</option>
+        </select>
+      </section>
+      <section class="logo-container">
+        <a href="https://github.com/cmalaga-code/text-hash" target="_blank"><img
+          class="terminal-logo"
+          src="./assets/terminal-solid.svg"
+          alt="terminal"
+        /></a>
+      </section>
+    </header>
+    <main>
+      <article>
+        <div class="card  mb-3 card-inst">
+          <div class="card-header">Welcome!</div>
+          <div class="card-body card-inst-body">
+            <p class="card-text">
+                Thank you for taking the time to visit my site!! You can choose
+                what algorithm you would like by selecting above. This website utilizes my
+                API to hash client requests.
+            </p>
+            <br>
+            <p>Also, dont forget to look at my other projects by clicking on the icon below.</p>
+            <a href="https://github.com/cmalaga-code/" target="_blank"><img class="project-svg" src="./assets/github.svg" /></a>
+            <hr>
+            <h4 class="project-summary-header">Project Summary:<h4>
+            <p class="project-summary-text">
+              This project lets the end user compare two strings to see if it is the same information. This may be useful for large text files. You can also get the hash value for any string. Above you can pick the algorithm that you want. 
+            </p>
+            <hr>
+            <h4>Links:</h4>
+            <div class="links">
+              <a href="https://cmalaga.netlify.app/" target="_blank"><p class="link-p">Website</p></a>
+              <a href="https://github.com/cmalaga-code/text-hash" target="_blank"><p class="link-p">GitHub</p></a>
+              <a href="https://www.linkedin.com/in/cristian-malaga/" target="_blank"><p class="link-p">Linkedin</p></a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <section class="input-section">
+        <div class="card algo-box">
+            <div class="card-body user-input-text-body">
+                <div class="result-container">
+                  <p class="result-main"></p>
+                  <p class="result-secondary"></p>
+                  <p class="result-match"></p>
+                </div>
+                <div class="card-text user-interact">
+                    <textarea cols="50" rows="10" name="input-string" id="input-string" placeholder="Place text here (A)"></textarea>
+                    <textarea cols="50" rows="10" name="input-string2" class="disappear" id="input-string2" placeholder="Place text here (B)"></textarea>  
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <section class="footer-reach-out">
+            <a class="footer-reach-out-link" href="https://github.com/cmalaga-code"><p>GitHub</p></a>
+            <a class="footer-reach-out-link" href="https://www.linkedin.com/in/cristian-malaga/"><p>Linkedin</p></a>
+            <a class="footer-reach-out-link" href="https://cmalaga.netlify.app/"><p>Website</p></a>
+        </section>
+        <section class="copyright">
+            &copy; 2024
+        </section>
+    </footer>
+  </body>
+</html>
