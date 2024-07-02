@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "build": "npm i"
+    "get": "npm install",
+    "dist": "mkdir -p ./dist/src/javascript && mkdir -p ./dist/src/css && mkdir -p ./dist/assets/",
+    "copy": "cp ./src/javascript/* ./dist/src/javascript && cp ./src/css/* ./dist/src/css && cp ./index.html ./dist && cp ./assets/* ./dist/assets",
+    "prod": "npm run get && npm run dist && npm run copy"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^29.7.0"
   },
